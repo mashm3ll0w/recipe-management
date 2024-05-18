@@ -1,0 +1,119 @@
+body {
+	text-align: center;
+}
+
+/* Login form */
+.login-form-container {
+	display: flex;
+	width: 300px;
+	height: 200px;
+	border: 1px solid #dee2e6;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	margin: 20px auto;
+}
+
+.login-btn, .register-btn {
+	width: 250px;
+}
+
+/* Register Form */
+.register-form-container {
+	display: flex;
+	width: 300px;
+	height: 360px;
+	border: 1px solid #dee2e6;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	margin: 20px auto;
+}
+
+
+.post-container {
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+  border: solid 1px #dee2e6;
+	padding: 10px;
+}
+
+.edit-post, .save-post{
+	color: #007bff;
+}
+
+.edit-post, .save-post:hover {
+	cursor: pointer;
+}
+
+.user-time {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.post-div {
+	width: 300px;
+	text-align: justify;
+}
+
+.likes-comments {
+	display: flex;
+  flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.username {
+  font-weight: bolder;
+	font-family: monospace;
+}
+
+.timestamp {
+	font-weight: bolder;
+  color: #b4b4b6;
+}
+
+#new-post-view {
+	width: 400px;
+	margin: 10px auto;
+}
+
+#user-post {
+	height: 70px;
+	margin: 0 0 10px;
+}
+
+#post-btn {
+	width: 400px;
+}
+
+.liked {
+	width: 35px;
+	margin-right: 20px;
+	vertical-align: center;
+}
+
+.profile-card{
+	width: 21%;
+	margin: 0 auto 10px;
+	height: 140px;
+}
+
+.user-and-btn {
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+#follow-btn {
+	width: 75px;
+}
+
+.followers-count {
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
