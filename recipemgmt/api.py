@@ -11,7 +11,7 @@ def recipes(request):
 
 
 # Get a single Recipe
-@api.get("/recipes/{recipe_id}", response={200: RecipeSchema, 400:MessageSchema})
+@api.get("/recipes/{recipe_id}", response={200: RecipeSchema, 404:MessageSchema})
 def recipe(request, recipe_id):
   try:
     recipe = Recipe.objects.get(pk=recipe_id)
@@ -24,11 +24,11 @@ def recipe(request, recipe_id):
 @api.post("/recipes", response={201: RecipeSchema})
 def create_recipe(request, recipe: RecipeCreateSchema):
   Recipe.objects.create(**recipe.dict())
-  return Recipe
+  return recipe
 
 
 # Delete a Recipe
-@api.delete("/recipes/{recipe_id}", response={204: MessageSchema, 404:MessageSchema})
+@api.delete("/recipes/{recipe_id}", response={204: MessageSchema, 404: MessageSchema})
 def delete_recipe(request, recipe_id):
   try:
     recipe = Recipe.objects.get(pk=recipe_id)
