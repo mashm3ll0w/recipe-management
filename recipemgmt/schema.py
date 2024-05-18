@@ -1,7 +1,7 @@
 from ninja import Schema
 
 
-class ErrorMessageSchema(Schema):
+class MessageSchema(Schema):
   message: str
 
 
