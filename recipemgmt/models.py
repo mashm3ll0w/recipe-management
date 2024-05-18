@@ -6,9 +6,9 @@ class Recipe(models.Model):
   Create a new Recipe item and add it to the database
   """
   DIFFICULTY_CHOICES = [
-    ("EASY", "BEGINNER"),
-    ("MEDIUM", "INTERMEDIATE"),
-    ("HARD", "EXPERT")
+    ("BEGINNER", "Easy"),
+    ("INTERMEDIATE", "Medium"),
+    ("EXPERT", "Hard")
   ]
 
   title = models.CharField(max_length=255, null=False, db_index=True)
