@@ -23,9 +23,9 @@ def recipe(request, recipe_id):
 # Create a new Recipe
 @api.post("/recipes", response={201: RecipeSchema})
 def create_recipe(request, recipe: RecipeCreateSchema):
-  Recipe.objects.create(**recipe.dict())
-  return recipe
-
+  recipe_data = recipe.model_dump()
+  recipe_model = Recipe.objects.create(**recipe_data)
+  return recipe_model
 
 # Delete a Recipe
 @api.delete("/recipes/{recipe_id}", response={204: MessageSchema, 404: MessageSchema})
