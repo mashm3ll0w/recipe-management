@@ -46,6 +46,10 @@
               </div>
             </div>
     </nav>
-    <div class="container mx-96 mt-10">{% block body %} {% endblock %}</div>
+
+    <div class="container mx-96 mt-10">
+      <button type="button"><a class="nav-link" href="{% url 'new_recipe' %}">Create Recipe +</a></button>
+      {% block body %} {% endblock %}
+    </div>
   </body>
 </html>

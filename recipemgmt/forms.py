@@ -15,9 +15,9 @@ class RecipeForm(forms.ModelForm):
       "difficulty_level": ""
     }
     widgets = {
-      "title": TextInput(attrs={"class": "form-control listing-form", "placeholder": "Enter Recipe title"}),
-      "description": Textarea(attrs={"class": "form-control listing-form", "cols": 20, "rows": 3, "placeholder": "Recipe description"}),
-      "ingredients": Textarea(attrs={"class": "form-control listing-form", "cols": 20, "rows": 3, "placeholder": "Ingredients..."}),
-      "cooking_instructions": Textarea(attrs={"class": "form-control listing-form", "cols": 20, "rows": 3, "placeholder": "How do you cook the meal?..."}),
-      "difficulty_level": Select(attrs={"class": "form-control listing-form", "placeholder": "Select difficulty"})
+      "title": TextInput(attrs={"class": "block text-sm font-medium leading-6 text-gray-900", "placeholder": "Enter Recipe title"}),
+      "description": Textarea(attrs={"class": "block text-sm font-medium leading-6 text-gray-900", "cols": 20, "rows": 3, "placeholder": "Recipe description"}),
+      "ingredients": Textarea(attrs={"class": "block text-sm font-medium leading-6 text-gray-900", "cols": 20, "rows": 3, "placeholder": "Ingredients..."}),
+      "cooking_instructions": Textarea(attrs={"class": "block text-sm font-medium leading-6 text-gray-900", "cols": 20, "rows": 3, "placeholder": "How do you cook the meal?..."}),
+      "difficulty_level": Select(attrs={"class": "block text-sm font-medium leading-6 text-gray-900", "placeholder": "Select difficulty"})
     }
